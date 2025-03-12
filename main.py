@@ -33,9 +33,22 @@ while opcion != 5:
         
         
     elif opcion==2:
-        print("estoy en la 2")
+       #utilizando ciclo for en python para recorrer listas
+       for productoSeleccionado in productos:
+        print(productoSeleccionado["nombre1"])
     elif opcion==3:
-        print("estoy en la 3")
+       #0. Preguntar a quien quieres editar
+       productoCambio=int(input("Digita el id del producto a cambiar: "))
+       #1. enocntrar el elemento
+       for productoBuscado in productos:
+          if productoBuscado["id"]==productoCambio:
+             print("Oeee lo encontre")  
+             break 
+          else:
+             print("Parce no lo encontre")
+       #2. Seleciono el elemento
+       #3. Acccedo a las propiedades o atributos que quiero o puedo modificar
+
     elif opcion==4:
         print("estoy en la 4")
     else:
